@@ -8,7 +8,7 @@ function moveIt() {
     const triangle = document.getElementById("trngl");
     
     if (animationId) // prevent animation overlap 
-    console.log(animationId);
+        cancelAnimationFrame(frame);
     
     
     let pos;
@@ -64,4 +64,21 @@ function moveIt() {
     animationId = requestAnimationFrame(frame);
 }
 
+
 document.getElementById("signin").addEventListener("click", moveIt);
+document.querySelector("#showpass").addEventListener("click", function() {
+    
+    const pass = document.getElementById("pass_hidden");
+
+    if (this.className === "bx bxs-sun")
+    {
+        this.className = "bx bx-sun";
+        pass.type = "text";
+    }
+    else
+    {
+        this.className = "bx bxs-sun";
+        pass.type = "password";
+    }
+        
+});

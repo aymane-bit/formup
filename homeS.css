@@ -200,3 +200,10 @@ body {
     background-color: #123458;
     color: #D9D9D9;
 }
+
+#loginForm i {
+    position: absolute;
+    top: 190px;
+    left: 450px;
+    font-size: 50px;
+}
