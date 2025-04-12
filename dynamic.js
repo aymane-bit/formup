@@ -16,7 +16,6 @@ function moveIt() {
     
     if (isMoved === false)
     {
-        // triangle.style.visibility = "hidden";
         triangle.style.borderLeft = "0px";
         triangle.style.borderRight = "420px solid #9b0f0f";
         triangle.style.borderTop = "420px solid transparent"
@@ -27,7 +26,6 @@ function moveIt() {
     }
     else
     {
-        // triangle.style.visibility = "visible";
         triangle.style.borderLeft = "420px solid #9b0f0f";
         triangle.style.borderTop = "420px solid transparent"
         triangle.style.borderBottom = "420px solid transparent";
@@ -65,6 +63,7 @@ function moveIt() {
 }
 
 
+
 document.getElementById("signin").addEventListener("click", moveIt);
 document.querySelector("#showpass").addEventListener("click", function() {
     
@@ -82,3 +81,4 @@ document.querySelector("#showpass").addEventListener("click", function() {
     }
         
 });
+

@@ -9,19 +9,20 @@
 </head>
 <body>
     <div id="container">
+        <div id="error_handel">
+        </div>
         <div id="trngl" class="triangle"></div>
         <div class="wrapper">
-            
-            <form id="loginForm">
+            <form id="loginForm" novalidate>
                 <h1>WELCOME BACK</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Email" required>
+                    <input id="email_log" type="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input id="pass_hidden" type="password" placeholder="Password" required>
+                    <input id="pass_hidden" type="password" placeholder="Password">
                 </div>
                 <i id="showpass" class='bx bxs-sun'></i>
-                <button type="submit" class="btn" >SIGN IN</button>
+                <button id="login_but" type="submit" class="btn" >SIGN IN</button>
             </form>
 
             <form id="registerForm">
@@ -44,13 +45,14 @@
         </div>
         <div id="login_dev">
             <div id="welcome">
-                <h1>FormUP <br> Simplify, Create, Elevate!</h1>
+                <h1>GuestLY <br> Simplify, Create, Elevate!</h1>
                 <img src="sources/form_ico.png">
-                <h2>Unlock the power of effortless form creation <br> <br> SIGN UP NOW!</h2>
+                <h2>Invite with love, party, organize with ease <br> <br> SIGN UP NOW!</h2>
                 <button id="signin">sign up</button>
             </div>
         </div>
     </div>
     <script src="dynamic.js"></script>
+    <script src="parseForm.js"></script>
 </body>
 </html>

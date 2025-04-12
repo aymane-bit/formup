@@ -207,3 +207,32 @@ body {
     left: 450px;
     font-size: 50px;
 }
+
+#error_handel {
+    position: absolute;
+    left: 1300px;
+    top: 100px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #9b0f0f;
+}
+
+.placeholder-style-2::placeholder 
+{
+    font-weight: bold;
+}
+
+#error_handel {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    font-size: 26px;
+    visibility: hidden;
+    width: 400px;
+    height: 100px;
+    top: 160px;
+    left: 1227px;
+    background-color: rgba(189, 49, 49, 0.2);
+    border-radius: 10px;
+    border: 2px solid red;
+}
