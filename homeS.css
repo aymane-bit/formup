@@ -25,7 +25,7 @@ body {
     /* visibility: hidden; */
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     width: 690px;
     height: 840px;
 }
@@ -230,8 +230,6 @@ body {
     visibility: hidden;
     width: 400px;
     height: 100px;
-    top: 160px;
-    left: 1227px;
     background-color: rgba(189, 49, 49, 0.2);
     border-radius: 10px;
     border: 2px solid red;
