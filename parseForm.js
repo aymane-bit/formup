@@ -94,11 +94,6 @@ function show_error_dev() {
 }
 
 // password policy check
-function PasswordPolicy() {
-    
-
-    return true;
-}
 
 register_form.addEventListener('submit', (e) => {
     let errorMessages = [];
@@ -119,13 +114,6 @@ register_form.addEventListener('submit', (e) => {
         pass_re.style.border = "2px solid #9b0f0f";
 
     }
-    else if (PasswordPolicy() === false)
-    {
-        errorMessages.push('Password Dont Match');
-        show_error_dev();
-        pass_confirm_re.style.border = "2px solid #9b0f0f";
-        pass_re.style.border = "2px solid #9b0f0f";
-    }    
     error.innerText = errorMessages.join(', ');
 })
 
